@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js-biglietto-treno-form</title>
+
+    <!--FONTAWSOME -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- BS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- JS -->
+    <script type="text/javascript" src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <main
+      class="bg-light p-5"
+      style="font-family: 'VT323', monospace"
+      id="main"
+    >
+      <div
+        class="container text-center border border-dark bg-success rounded p-4"
+      >
+        <h1 class="p-4 text-info">BENVENUTO</h1>
+        <span class="fs-5"><i class="fa-solid fa-train"></i></span>
+        <h2 class="p-4 text-dark">Iserisci qui i tuoi dati</h2>
+
+        <div class="d-flex p-4 gap-4 justify-content-center">
+          <div>
+            <h3>Nome</h3>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Inserisci il tuo nome"
+            />
+          </div>
+          <div>
+            <h3>Età</h3>
+            <input
+              type="text"
+              class="form-control"
+              id="age"
+              placeholder="Inserisci la tua età"
+            />
+          </div>
+          <div>
+            <h3>Km da percorrere</h3>
+            <input
+              type="text"
+              class="form-control"
+              id="km"
+              placeholder="Inserisci la distanza"
+            />
+          </div>
+        </div>
+
+        <h2 class="p-4 text-dark">Grazie per averci scelto e buon viaggio</h2>
+
+        <button
+          type="button"
+          class="btn btn-light btn-outline-dark mt-5"
+          id="btn"
+        >
+          Stampa Biglietto
+        </button>
+      </div>
+      <div class="d-none" id="ticket">
+        <div class="container p-5">
+          <div class="row justify-content-center">
+            <div class="col-5 border border-dark bg-success">
+              <h2 class="border-bottom border-dark">IL TUO BIGLIETTO:</h2>
+
+              <div>
+                <h3>Nome</h3>
+                <h5 id="bgl-name" class="bg-info"></h5>
+              </div>
+
+              <div>
+                <h3>Età</h3>
+                <h5 id="bgl-age" class="bg-info"></h5>
+              </div>
+
+              <div>
+                <h3>Destinazione</h3>
+                <h5>Montesilvano - Milano (Stazione Centrale)</h5>
+              </div>
+
+              <div>
+                <h3>KM da percorrere</h3>
+                <h5 id="bgl-km" class="bg-info"></h5>
+              </div>
+
+              <div class="text-center">
+                <h2 class="text-dark">PREZZO</h2>
+                <h3 id="bgl-price" class="border border-info text-white">€</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
