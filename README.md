@@ -16,9 +16,9 @@ MILESTONE 2:
 Solo una volta che il milestone 1 sarà completo e funzionante allora realizzeremo un form in pagina in cui l'utente potrà inserire i dati e visualizzare il calcolo finale con il prezzo.
 Il recap dei dati e l'output del prezzo finale, andranno quindi stampati in pagina (il prezzo dovrà essere formattato con massimo due decimali, per indicare i centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
-## PROCEDIMENTO
+# ESECUZIONE
 
-- Attraverso un form raccolgo le informazioni dell'utente relative ai km da percorrere e la sua età anagrafica
+- Attraverso un form raccolgo le informazioni dell'utente relative ai km da percorrere e la sua età
 - Raccolgo queste informazioni attraverso l'id dei vari input e le inserisco all'interno di variabili
 - Imposto delle condizioni di sconto relative all'età dell'utente
-- al click del bottone comparirà sulla pagina il prezzo da pagare
+- al click del bottone comparirà il biglietto sulla pagina con il prezzo da pagare
